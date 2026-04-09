@@ -61,6 +61,13 @@ pip install -r requirements.txt
 4️⃣ Run Application: python app.py
 5️⃣ Open in Browser: http://127.0.0.1:5000/
 OUTPUT Design:-
+output:- 01
 <img width="1894" height="849" alt="Screenshot 2026-04-09 160751" src="https://github.com/user-attachments/assets/53471389-2727-45fc-baea-1791d5d87724" />
+output:- 02
+<img width="1877" height="850" alt="Screenshot 2026-04-09 160806" src="https://github.com/user-attachments/assets/2b7c683e-062b-4d36-ac09-9a968d83d865" />
+output:- 03
+<img width="1872" height="814" alt="Screenshot 2026-04-09 160820" src="https://github.com/user-attachments/assets/f084c401-83e6-4476-9ffb-2613f9d3160c" />
+
+
 
 
