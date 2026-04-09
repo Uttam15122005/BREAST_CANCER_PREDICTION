@@ -45,3 +45,19 @@ It helps in **early detection of breast cancer**, improving decision-making in h
 ---
 
 ## 📁 Project Structure
+
+breast-cancer-app/
+│
+├── app.py
+├── train_model.py
+├── model.pkl
+├── requirements.txt
+├── templates/
+│ └── index.html
+
+Install Dependencies:
+pip install -r requirements.txt
+3️⃣ Train Model:python train_model.py
+4️⃣ Run Application: python app.py
+5️⃣ Open in Browser: http://127.0.0.1:5000/
+
