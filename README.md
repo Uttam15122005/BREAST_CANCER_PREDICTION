@@ -60,4 +60,7 @@ pip install -r requirements.txt
 3️⃣ Train Model:python train_model.py
 4️⃣ Run Application: python app.py
 5️⃣ Open in Browser: http://127.0.0.1:5000/
+OUTPUT Design:-
+<img width="1894" height="849" alt="Screenshot 2026-04-09 160751" src="https://github.com/user-attachments/assets/53471389-2727-45fc-baea-1791d5d87724" />
+
 
