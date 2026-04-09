@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Detection</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            padding: 20px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+            color: yellow;
+        }
+
+        .header h2 {
+            margin: 5px;
+            color: white;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #00ffcc;
+        }
+
+        .form-container {
+            width: 95%;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            text-align: center;
+            background: #ecf0f1;
+            color: black;
+            font-weight: bold;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 35px;
+            font-size: 18px;
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #24c6dc, #514a9d);
+        }
+
+        .result {
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .benign {
+            color: #00ff99;
+        }
+
+        .malignant {
+            color: #ff4d4d;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: #111;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🏥 Indian AI Hospital</h1>
+    <h2>Breast Cancer Detection System</h2>
+</div>
+
+<h2>Enter Tumor Feature Values</h2>
+
+<div class="form-container">
+<form action="/predict" method="post">
+
+<div class="grid">
+
+<!-- 30 Inputs -->
+<input name="f1" placeholder="mean radius" required>
+<input name="f2" placeholder="mean texture" required>
+<input name="f3" placeholder="mean perimeter" required>
+<input name="f4" placeholder="mean area" required>
+<input name="f5" placeholder="mean smoothness" required>
+<input name="f6" placeholder="mean compactness" required>
+
+<input name="f7" placeholder="mean concavity" required>
+<input name="f8" placeholder="mean concave points" required>
+<input name="f9" placeholder="mean symmetry" required>
+<input name="f10" placeholder="mean fractal dimension" required>
+<input name="f11" placeholder="radius error" required>
+<input name="f12" placeholder="texture error" required>
+
+<input name="f13" placeholder="perimeter error" required>
+<input name="f14" placeholder="area error" required>
+<input name="f15" placeholder="smoothness error" required>
+<input name="f16" placeholder="compactness error" required>
+<input name="f17" placeholder="concavity error" required>
+<input name="f18" placeholder="concave points error" required>
+
+<input name="f19" placeholder="symmetry error" required>
+<input name="f20" placeholder="fractal dimension error" required>
+<input name="f21" placeholder="worst radius" required>
+<input name="f22" placeholder="worst texture" required>
+<input name="f23" placeholder="worst perimeter" required>
+<input name="f24" placeholder="worst area" required>
+
+<input name="f25" placeholder="worst smoothness" required>
+<input name="f26" placeholder="worst compactness" required>
+<input name="f27" placeholder="worst concavity" required>
+<input name="f28" placeholder="worst concave points" required>
+<input name="f29" placeholder="worst symmetry" required>
+<input name="f30" placeholder="worst fractal dimension" required>
+
+</div>
+
+<button type="submit">🔍 Predict Cancer</button>
+
+</form>
+
+<div class="result">
+    {{ prediction_text|safe }}
+</div>
+
+</div>
+
+<footer>
+    © 2026 AI Healthcare System | Built with Flask
+</footer>
+
+</body>
+</html>
